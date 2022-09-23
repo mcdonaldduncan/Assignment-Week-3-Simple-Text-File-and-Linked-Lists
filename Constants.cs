@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace InClass9_19
 {
-    internal class Constants
+    public static class Constants
     {
-        const string readPath = @"C:\temp\Stats.txt";
-        const string writePath = @"C:\temp\GameLog.txt";
+        public const string readPath = @"C:\temp\Stats.txt";
+        public const string writePath = @"C:\temp\GameLog.txt";
 
     }
 }
