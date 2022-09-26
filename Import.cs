@@ -22,7 +22,10 @@ namespace InClass9_19
                 while ((line = sr.ReadLine()) != null)
                 {
                     if (lineNumber++ == 0)
+                    {
                         continue;
+                    }
+                        
                     temp.Add(line);
                 }
                 foreach (var item in temp)
@@ -64,7 +67,7 @@ namespace InClass9_19
                     }
                     if (Int32.TryParse(tempSplit[i++], out int k))
                     {
-                        def = x;
+                        def = k;
                     }
                     else
                     {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static InClass9_19.Rand;
 using static InClass9_19.NameBank;
 
 namespace InClass9_19
@@ -12,6 +11,7 @@ namespace InClass9_19
     {
         public string name;
         public Monster monster;
+        private Random R = new Random();
 
         public Encounter(Monster m)
         {

@@ -18,11 +18,19 @@ namespace InClass9_19
                 while (totalLines < maxLines)
                 {
                     // I tested it and this null check is not needed as far as my testing revealed but I opted to leave it in for extra assurance
+                    // Removed single line ifs in favor of bracketed ifs
                     if (node == null)
+                    {
                         return;
+                    }
+                        
                     sw.WriteLine(node.Info);
+
                     if (node.IsTail)
+                    {
                         return;
+                    }
+                        
                     node = node.next;
                     totalLines++;
                 }

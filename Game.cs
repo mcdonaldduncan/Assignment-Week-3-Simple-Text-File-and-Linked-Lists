@@ -48,10 +48,12 @@ namespace InClass9_19
                 currentEncounter = GetEncounterFromInput();
                 DoublyNode newNode = ProcessEncounter(currentEncounter, player, currentTurn);
                 doublyNodes.Add(newNode);
-                if (player.SumStats() < currentEncounter.monster.SumStats())
-                {
-                    player.HP = 0;
-                }
+                // This line ends the game when the user is defeated, it does not end automatically after one, only if you lose.
+                // Removed to meet modified requirements
+                //if (player.SumStats() < currentEncounter.monster.SumStats())
+                //{
+                //    player.HP = 0;
+                //}
                 encounters.Remove(currentEncounter);
                 currentTurn++;
                 

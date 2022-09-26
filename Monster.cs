@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static InClass9_19.Rand;
 
 namespace InClass9_19
 {
@@ -14,6 +13,8 @@ namespace InClass9_19
         internal int MP;
         internal int AP;
         internal int Def;
+
+        private Random R = new Random();
 
         // If you want to experiment with different results, tweak the random values assigned to the player monster
         public Monster(string name)
