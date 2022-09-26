@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\GitHub\\InClass9_19\\InClass9_19.csproj": {}
+    "C:\\Users\\dfmcd\\Documents\\GitHub\\InClass9_19\\InClass9_19.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\GitHub\\InClass9_19\\InClass9_19.csproj": {
+    "C:\\Users\\dfmcd\\Documents\\GitHub\\InClass9_19\\InClass9_19.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\GitHub\\InClass9_19\\InClass9_19.csproj",
+        "projectUniqueName": "C:\\Users\\dfmcd\\Documents\\GitHub\\InClass9_19\\InClass9_19.csproj",
         "projectName": "InClass9_19",
-        "projectPath": "D:\\Documents\\GitHub\\InClass9_19\\InClass9_19.csproj",
-        "packagesPath": "C:\\Users\\dfmcd98\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\GitHub\\InClass9_19\\obj\\",
+        "projectPath": "C:\\Users\\dfmcd\\Documents\\GitHub\\InClass9_19\\InClass9_19.csproj",
+        "packagesPath": "C:\\Users\\dfmcd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dfmcd\\Documents\\GitHub\\InClass9_19\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dfmcd98\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dfmcd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

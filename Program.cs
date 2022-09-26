@@ -1,10 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using InClass9_19;
 
-
-// Load balancer
-
-
-// Flat file - transfer meta data, descrioptive info, non secured data
-// Secure/encrypted data cannot be sent via flat file
-// 
+Game game = new Game();
+game.RunGame();

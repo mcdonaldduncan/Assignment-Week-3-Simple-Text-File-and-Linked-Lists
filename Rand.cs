@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace InClass9_19
 {
-    internal class Info
+    internal static class Rand
     {
-        string name;
-        int HP;
-        int MP;
-        int AP;
-        int DEF;
+        internal static Random R = new Random();
     }
 }

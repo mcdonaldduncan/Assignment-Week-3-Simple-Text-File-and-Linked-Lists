@@ -8,18 +8,17 @@ namespace InClass9_19
 {
     internal class DoublyNode
     {
-        public Info Info;
+        public string Info;
         public bool IsHead;
         public bool IsTail;
         public DoublyNode? next;
         public DoublyNode? prev;
 
-        public DoublyNode(Info info, bool isHead, bool isTail)
+        public DoublyNode(string info, bool isHead, bool isTail)
         {
             Info = info;
             IsHead = isHead;
             IsTail = isTail;
         }
-
     }
 }
