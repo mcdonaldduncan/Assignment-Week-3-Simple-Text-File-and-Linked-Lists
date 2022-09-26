@@ -20,6 +20,5 @@ namespace InClass9_19
             name = nameBank[nameIndex];
             nameBank.RemoveAt(nameIndex);
         }
-
     }
 }

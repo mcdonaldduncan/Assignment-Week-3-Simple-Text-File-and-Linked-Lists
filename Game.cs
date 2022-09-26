@@ -14,6 +14,8 @@ namespace InClass9_19
         List<Monster> monsters = new List<Monster>();
         List<Encounter> encounters = new List<Encounter>();
         List<DoublyNode> doublyNodes = new List<DoublyNode>();
+
+        int maxTurns;
         
         public void RunGame()
         {
@@ -27,7 +29,10 @@ namespace InClass9_19
             {
                 Encounter encounter = new Encounter(item);
                 encounters.Add(encounter);
+                
             }
+            
+            maxTurns = encounters.Count;
             
             while (CanContinue(player))
             {
@@ -71,9 +76,9 @@ namespace InClass9_19
         {
             Print($"You are now exploring {encounter.name}");
             Print($"You have encountered a {encounter.monster.Name}");
-            Print($"Player Total: {player.SumStats()}, Enemy Total: {encounter.monster.SumStats()}");
             int enemyTotal = encounter.monster.SumStats();
             int playerTotal = player.SumStats();
+            Print($"Player Total: {playerTotal}, Enemy Total: {enemyTotal}");
             string result = $"You({player.Name}) encountered a {encounter.monster.Name} in the {encounter.name} and emerged {TestMonsterTotals(playerTotal, enemyTotal)}!";
             Print(result);
 
@@ -84,7 +89,7 @@ namespace InClass9_19
             }
             else
             {
-                if (playerTotal >= enemyTotal)
+                if (playerTotal >= enemyTotal && turn < maxTurns - 1)
                 {
                     DoublyNode temp = new DoublyNode(result, false, false);
                     return temp;
@@ -110,11 +115,6 @@ namespace InClass9_19
             }
             return temp;
         }
-
-        //bool TestMonsterTotalsBool(int playerStats, int enemyStats)
-        //{
-        //    return playerStats >= enemyStats;
-        //}
 
         Encounter GetEncounterFromInput()
         {
