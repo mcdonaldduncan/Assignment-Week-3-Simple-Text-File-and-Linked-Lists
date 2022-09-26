@@ -32,7 +32,7 @@ namespace InClass9_19
                 
             }
             
-            maxTurns = encounters.Count;
+            maxTurns = encounters.Count - 1;
             
             while (CanContinue(player))
             {
@@ -89,7 +89,7 @@ namespace InClass9_19
             }
             else
             {
-                if (playerTotal >= enemyTotal && turn < maxTurns - 1)
+                if (playerTotal >= enemyTotal && turn < maxTurns)
                 {
                     DoublyNode temp = new DoublyNode(result, false, false);
                     return temp;
