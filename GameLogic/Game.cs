@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static InClass9_19.Import;
-using static InClass9_19.Export;
+using static InClass9_19.FileProcess.Export;
 
-namespace InClass9_19
+namespace InClass9_19.GameLogic
 {
     internal class Game
     {
@@ -15,7 +15,7 @@ namespace InClass9_19
         List<DoublyNode> doublyNodes = new List<DoublyNode>();
 
         int maxTurns;
-        
+
         public void RunGame()
         {
             Monster player = SetUpGame();
@@ -91,7 +91,7 @@ namespace InClass9_19
 
             return player;
         }
-        
+
         DoublyNode ProcessEncounter(Encounter encounter, Monster player, int turn)
         {
             Console.WriteLine($"You are now exploring {encounter.name}");
@@ -151,7 +151,7 @@ namespace InClass9_19
             }
             return current;
         }
-        
+
         bool CanContinue(Monster player)
         {
             return encounters.Count > 0 && player.HP > 0;

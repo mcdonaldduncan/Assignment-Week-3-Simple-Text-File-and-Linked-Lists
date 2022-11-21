@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static InClass9_19.Constants;
 
-namespace InClass9_19
+namespace InClass9_19.FileProcess
 {
     internal class Export
     {
@@ -15,6 +15,8 @@ namespace InClass9_19
             int totalLines = 0;
             using (StreamWriter sw = new StreamWriter(writePath, false))
             {
+                sw.WriteLine($"Processed at {DateTime.Now}");
+
                 while (totalLines < maxLines)
                 {
                     sw.WriteLine(node?.Info ?? "Null");
@@ -23,7 +25,7 @@ namespace InClass9_19
                     {
                         return;
                     }
-                        
+
                     node = node?.next ?? new DoublyNode("null", false, false);
                     totalLines++;
                 }
